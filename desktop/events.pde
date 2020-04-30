@@ -1,7 +1,7 @@
 // User interaction logic calling data (model) and views
 
-String expanded_recipe; //ID of order in focus
-String MQTT_topic = "recipes";
+String expanded_recipe; //ID of recipe in focus
+String MQTT_topic = "Recipes_desktop";
 int button_state = 0;
 
 void clientConnected() {

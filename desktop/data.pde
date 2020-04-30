@@ -88,6 +88,7 @@ public class RecipeData {
     JSONObject recipe = getRecipeByID(id);
     // key, value
     recipe.setString("recipe_status", newstatus);
-    client.publish("recipes", recipe.toString());
+    client.publish("Recipes_desktop", recipe.toString());
+    println("new message: "+ recipe.toString());
   }
 }

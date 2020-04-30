@@ -16,7 +16,7 @@ void setup() {
     // connect to the broker
     client = new MQTTClient(this);
     // connect to the broker and use a random string for clientid
-    client.connect("mqtt://try:try@broker.hivemq.com", "processing_desktop" + str(random(3)));
+    client.connect("mqtt://broker.mqttdashboard.com", "processing" + str(random(3)));
     
     delay(100);
     
