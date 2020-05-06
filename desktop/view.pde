@@ -8,7 +8,6 @@ void refreshDashboardData() {
     for (String status: Status.LIST) {
         cp5.remove(status + " total ");
         cp5.remove(status);
-        cp5.remove(status + " chart ");
     }
     view.resetSpacing();
     updateDashboardData();
@@ -20,7 +19,6 @@ void updateDashboardData() {
     for (String status: Status.LIST) {
         view.build_metric(status + " total ", (float) api.getRecipesByStatus(status).length);
         view.build_list(status, api.getRecipesByStatus(status));
-        //view.build_Chart(status + " chart ", api.getOrdersByStatus(Status.OPEN).length, api.getOrdersByStatus(Status.CLOSED).length, api.getOrdersByStatus(Status.PROCESSING).length, api.getOrdersByStatus(Status.DELIVERED).length);
     }
 }
 
@@ -81,8 +79,8 @@ public class Dashboard_view {
         }
 
         ListBox recipe = cp5.addListBox("Expanded recipe")
-            .setPosition((4 * horiz_margin_spacing), 4 * vert_margin_spacing)
-            .setSize(550, 150)
+            .setPosition((2 * horiz_margin_spacing-50), 4 * vert_margin_spacing)
+            .setSize(750, 150)
             .setItemHeight(30)
             .setBarHeight(30)
             .setColorBackground(color(188, 188, 184))
@@ -92,27 +90,28 @@ public class Dashboard_view {
 
        
         recipe.addItem(api.getRecipeByID(recipeid).getString("recipe_name"), 0);
-        recipe.addItem(api.getRecipeByID(recipeid).getString("recipe_status"), 1);
-        recipe.addItem(api.getRecipeByID(recipeid).getString("recipe_details"), 2);
-        recipe.addItem(api.getRecipeByID(recipeid).getString("recipe_total"), 3);
+        recipe.addItem(api.getRecipeByID(recipeid).getString("currency"), 1);
+        recipe.addItem(api.getRecipeByID(recipeid).getString("recipe_ingredients"), 2);
+        recipe.addItem(api.getRecipeByID(recipeid).getString("available_market"), 3);
+        recipe.addItem(api.getRecipeByID(recipeid).getString("recipe_status"), 4);
 
 
         // create the buttons
         cp5.addButton("send")
             .setValue(0)
-            .setPosition((4 * horiz_margin_spacing), 4 * vert_margin_spacing + 160)
+            .setPosition((3 * horiz_margin_spacing), 4 * vert_margin_spacing + 160)
             .setSize(100, 40)
             .setFont(createFont("arial",14));
 
         cp5.addButton("modify")
             .setValue(0)
-            .setPosition((4 * horiz_margin_spacing + 160), 4 * vert_margin_spacing + 160)
+            .setPosition((3 * horiz_margin_spacing + 200), 4 * vert_margin_spacing + 160)
             .setSize(100, 40)
             .setFont(createFont("arial",14));
 
         cp5.addButton("cancel")
             .setValue(0)
-            .setPosition((4 * horiz_margin_spacing + 320), 4 * vert_margin_spacing + 160)
+            .setPosition((3 * horiz_margin_spacing + 400), 4 * vert_margin_spacing + 160)
             .setSize(100, 40)
             .setFont(createFont("arial",14));
 

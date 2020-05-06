@@ -1,13 +1,20 @@
 {
-  "recipe_currency": "GBP",
-  "market": {
-    "market_id": "R2837843",
-    "market_coordinates": "51.454514,-2587910",
-    "market_name": "Tesco"
-  },
-  "recipe_total": "8.30",
+  "market": [
+    {
+      "market_id": "1",
+      "market_coordinates": "BS1 5SP",
+      "market_name": "Tesco"
+    },
+    {
+      "market_id": "3",
+      "market_coordinates": "BS2 8HW",
+      "market_name": "M&S"
+    }
+  ],
   "recipe_id": "OiQeGLR8",
-  "recipe_status": "published",
-  "recipe_name": "lemonchicken",
-  "recipe_details": "Chicken and Lemon"
+  "recipe_ingredients": "Beef(6.99/kg), Bean(3.75/kg), Red onion(0.21/each), Wild Rocket(1.67/100g)",
+  "recipe_status": "updating",
+  "recipe_name": "Balsamic beef with beetroot & rocket",
+  "currency": "GBP",
+  "available_market": "Tesco, M&S"
 }

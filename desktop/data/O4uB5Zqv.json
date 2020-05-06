@@ -1,13 +1,20 @@
 {
-  "market": {
-    "market_id": "R2837843",
-    "market_coordinates": "51.454514,-2587910",
+  "recipe_id": "O4uB5Zqv",
+  "recipe_name": "Quinoa porridge",
+  "currency": "GBP",
+  "recipe_ingredients": "Coconut Yogurt(0.22/100g), Blackberries(10.00/kg), Strawberries(5.00/kg)",
+  "recipe_status": "updating",
+  "available_market": "Tesco, Sainsbury's",
+
+  "market": [{
+    "market_id": "1",
+    "market_coordinates": "BS1 5SP",
     "market_name": "Tesco"
   },
-  "recipe_id": "O4uB5Zqv",
-  "recipe_currency": "GBP",
-  "recipe_status": "canceled",
-  "recipe_name": "cornbeef",
-  "recipe_total": "8.30",
-  "recipe_details": "Beef and corn"
+    {
+      "market_id": "2",
+      "market_coordinates": "BS8 1RE",
+      "market_name": "Sainsbury's"
+    }
+  ]
 }

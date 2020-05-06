@@ -1,13 +1,20 @@
 {
-  "market": {
-    "market_id": "R2837843",
-    "market_coordinates": "51.454514,-2587910",
+  "recipe_id": "O4HS7Kev",
+  "recipe_name": "Turkey piccata",
+  "currency": "GBP",
+  "recipe_ingredients": "turkey breast steaks(2.07/kg), baby potatoes(0.28/each), green salad(0.35/10g)",
+  "recipe_status": "published",
+  "available_market": "Tesco, Sainsbury's",
+
+  "market": [{
+    "market_id": "1",
+    "market_coordinates": "BS1 5SP",
     "market_name": "Tesco"
   },
-  "recipe_id": "O4HS7Kev",
-  "recipe_currency": "GBP",
-  "recipe_status": "published",
-  "recipe_name": "lemonchicken",
-  "recipe_total": "8.30",
-  "recipe_details": "Chicken and Lemon"
+  {
+    "market_id": "2",
+    "market_coordinates": "BS8 1RE",
+    "market_name": "Sainsbury's"
+  }
+]
 }
