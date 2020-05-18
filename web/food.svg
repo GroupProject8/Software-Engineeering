@@ -17,7 +17,7 @@
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="food.svg"
-   inkscape:export-filename="C:\Users\香蕉的菊子\Desktop\BB资料\gp\fast_food_example-master\web\pokefood.png"
+   inkscape:export-filename="D:\Software-Engineering\web\food.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -42,7 +42,7 @@
      inkscape:cx="682.91711"
      inkscape:cy="347.83134"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
@@ -86,12 +86,7 @@
            style="fill:#6db249;fill-opacity:1"
            id="flowSpan2676">o</flowSpan><flowSpan
            style="fill:#3c8061;fill-opacity:1"
-           id="flowSpan2692">d</flowSpan></flowPara></flowRoot>    <path
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:0.99215686;fill-rule:evenodd;stroke:none;stroke-width:3.33695555;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       d="M 104.12759,305.32616 C 97.398995,304.81328 84.101262,302.54211 77.065161,300.70375 46.073915,292.60656 25.69938,275.6384 19.950192,253.13734 c -0.757816,-2.9657 -0.890754,-9.63051 -0.890754,-44.64221 v -41.15607 h 4.952599 4.952595 v -2.07872 -2.079 H 24.012037 19.059438 V 151.89602 140.61065 H 123.35554 227.65218 v 11.28537 11.28532 h -2.33068 c -2.27521,0 -2.33064,0.0503 -2.33064,2.079 0,2.02931 0.0554,2.07872 2.33064,2.07872 h 2.33068 v 42.82854 c 0,47.50127 0.0803,46.37938 -3.86295,54.04717 -10.78481,20.97223 -44.90346,37.00418 -87.03249,40.89577 -6.11859,0.5658 -26.29319,0.69906 -32.62911,0.21472 z m 24.53546,-67.91119 c 9.59413,-1.85481 18.22904,-9.61769 21.51161,-19.33948 3.64013,-10.78086 0.99112,-22.36181 -6.99808,-30.59418 -4.59029,-4.72996 -9.59598,-7.35695 -15.93202,-8.36102 -11.73893,-1.86047 -24.12063,4.73407 -29.394038,15.65505 -2.2981,4.75945 -3.013434,7.96192 -3.031228,13.57125 -0.02529,8.56496 2.58521,15.0714 8.474966,21.10672 6.76264,6.93 15.88954,9.79431 25.36879,7.96166 z M 49.357704,165.26034 v -2.079 h -5.243915 -5.243964 v 2.079 2.07872 h 5.243964 5.243915 z m 20.393056,0 v -2.079 h -5.243912 -5.243964 v 2.079 2.07872 h 5.243964 5.243912 z m 20.866878,-0.14813 0.182652,-1.93046 h -5.57217 -5.572227 v 2.10124 2.10115 l 5.389601,-0.17123 5.389589,-0.17124 z m 20.501912,0.14813 v -2.079 h -5.5353 -5.53531 v 2.079 2.07872 h 5.53531 5.5353 z m 20.39322,0 v -2.079 h -5.53532 -5.5353 v 2.079 2.07872 h 5.5353 5.53532 z m 20.39315,0 v -2.079 h -5.24395 -5.24396 v 2.079 2.07872 h 5.24396 5.24395 z m 20.39317,0 v -2.079 h -5.24394 -5.24399 v 2.079 2.07872 h 5.24399 5.24394 z m 20.39319,0 v -2.079 h -5.24389 -5.24405 v 2.079 2.07872 h 5.24405 5.24389 z m 20.39321,0 v -2.079 h -5.24395 -5.24399 v 2.079 2.07872 h 5.24399 5.24395 z"
-       id="path907"
-       inkscape:connector-curvature="0" />
-  </g>
+           id="flowSpan2692">d</flowSpan></flowPara></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
@@ -99,10 +94,10 @@
      transform="translate(0,-47)">
     <path
        style="fill:#ffffff;fill-opacity:0.99215686;stroke:#000000;stroke-width:4.7808814;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 229.75551,237.56274 V 137.99121 H 17.090883 l -0.05909,101.50656 c 20.605361,77.85144 214.836427,61.24366 212.723847,-1.93503 z"
+       d="M 229.75551,237.56274 V 137.99121 H 17.090883 l -0.05909,102.04109 c 20.277985,78.5062 213.816907,62.74818 212.723847,-2.46956 z"
        id="path847"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="cccccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:3.58566093;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:10.75698219, 10.75698219;stroke-dashoffset:0;stroke-opacity:1"
        d="M 18.505473,162.25237 H 229.28397"
