@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PokeFood</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id='app' class="container">
+        <img src="./food.png" />
+        <div class="panel">
+            <div class="content login">
+                <div class="switch">
+                    <span :class='{"active": active === "login"}' @click='go("login")'>Login</span>
+                    <span>/</span>
+                    <span :class='{"active": active === "register"}' @click='go("register")'>Sign Up</span>
+                </div>
+                <div class='form' id="fromLogin">
+                    <template v-if='active === "register"'>
+                        <div class="input"><input type="text" name="Email" id='email' /><label for="email">Email</label></div>
+                        <div class="input"><input type="text" name="Username" id="username" /><label for="username">Username</label></div>
+                        <div class="input"><input type="password" name="Password" id="password" /><label for="password">Password</label></div>
+                        <div class="input"><input type="password" name="Repeat" id="repeat" /><label for="repeat">Repeat</label></div>
+                    </template>
+
+                    <template v-if='active === "login"'>
+                        <div class="input"><input type="text" name="Username" id="username" /><label for="username">Username</label></div>
+                        <div class="input"><input type="password" name="Password" id="password" /><label for="password">Password</label></div>
+                    </template>
+
+                    <a href="#" target="_blank">
+                        <span>Forgot?</span>
+                    </a>
+
+                    <a href="./placeorder.html" target="_blank">
+                        <button type="submit">LOGIN</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var vue = new Vue({
+        el: '#app',
+        data: {
+            active: 'login'
+        },
+        methods: {
+            go(type) {
+                this.active = type
+            }
+        },
+        beforeMount() {
+
+        }
+    })
+</script>
+
+</html>
