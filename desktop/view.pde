@@ -25,7 +25,7 @@ void updateDashboardData() {
 public class Dashboard_view {
 
     int is_expanded = 0;
-    int vert_margin_spacing = 70;
+    int vert_margin_spacing = 150;
     int horiz_margin_spacing = 70;
     int metric_x_size = 130;
     int metric_spacing = 0;
@@ -46,7 +46,7 @@ public class Dashboard_view {
     void build_list(String list_name, JSONObject[] recipes) {
 
         ScrollableList list = cp5.addScrollableList(list_name)
-            .setPosition((4 * horiz_margin_spacing) + list_spacing, vert_margin_spacing)
+            .setPosition((4 * horiz_margin_spacing+90) + list_spacing, vert_margin_spacing)
             .setSize(list_x_size, list_y_size);
         list.setBackgroundColor(color(0));
         list.setItemHeight(30);
@@ -79,8 +79,8 @@ public class Dashboard_view {
         }
 
         ListBox recipe = cp5.addListBox("Expanded recipe")
-            .setPosition((2 * horiz_margin_spacing-50), 4 * vert_margin_spacing)
-            .setSize(750, 150)
+            .setPosition((2 * horiz_margin_spacing-70), 3 * vert_margin_spacing-90)
+            .setSize(760, 150)
             .setItemHeight(30)
             .setBarHeight(30)
             .setColorBackground(color(188, 188, 184))
@@ -99,19 +99,19 @@ public class Dashboard_view {
         // create the buttons
         cp5.addButton("send")
             .setValue(0)
-            .setPosition((3 * horiz_margin_spacing), 4 * vert_margin_spacing + 160)
+            .setPosition((3 * horiz_margin_spacing-50), 3 * vert_margin_spacing+80 )
             .setSize(100, 40)
             .setFont(createFont("arial",14));
 
         cp5.addButton("modify")
             .setValue(0)
-            .setPosition((3 * horiz_margin_spacing + 200), 4 * vert_margin_spacing + 160)
+            .setPosition((3 * horiz_margin_spacing + 175), 3 * vert_margin_spacing+80 )
             .setSize(100, 40)
             .setFont(createFont("arial",14));
 
         cp5.addButton("cancel")
             .setValue(0)
-            .setPosition((3 * horiz_margin_spacing + 400), 4 * vert_margin_spacing + 160)
+            .setPosition((3 * horiz_margin_spacing + 400), 3 * vert_margin_spacing+80)
             .setSize(100, 40)
             .setFont(createFont("arial",14));
 
