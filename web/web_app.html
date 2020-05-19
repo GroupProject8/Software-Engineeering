@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="MQTT-client.js"></script>
+    <link rel="stylesheet" type="text/css" href="web_style.css" />
+</head>
+
+<body>
+
+    <form>
+        <h1>Online Food Order</h1>
+        <h5>Complete here:</h5>
+        <div class="group">
+            <input type="text" required="required" value="Generated at submission" /><span class="highlight"></span><span class="bar"></span>
+            <label>Order ID</label>
+        </div>
+        <div class="group">
+            <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+            <label>Order Status</label>
+        </div>
+        <div class="group">
+            <input type="password" required="required" /><span class="highlight"></span><span class="bar"></span>
+            <label>Delivery ID</label>
+        </div>
+        <div class="group">
+            <textarea type="textarea" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+            <label>Delivery Name</label>
+        </div>
+        <div class="btn-box">
+            <button onclick="placeOrder()" type="submit" class="btn btn-submit">Place Order</button>
+            <form action="http://www.hivemq.com/demos/websocket-client/" method="get" target="_blank">
+                <button type="submit" class="btn btn-submit">Open MQTT websocket client</button>
+            </form>
+            <button type="button" class="btn btn-cancel">Cancel</button>
+
+            <h5>Click "Place Order" to confirm and send your order to the restaurant.</h5>
+
+        </div>
+
+        <h5>Order status:</h5><b><p id="status"></p></b>
+        <h5>Below is a JSON payload submitted via MQTT:</h5>
+        <h5 id="order"></h5>
+        <table>
+            <tr>
+                <th>order_id</th>
+                <th>status</th>
+                <th>delivery_address</th>
+            </tr>
+        </table>
+
+    </form>
+
+
+
+
+</body>
+
+</html>

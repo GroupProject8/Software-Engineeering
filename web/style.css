@@ -8,7 +8,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-family: miaowu; */
     background: linear-gradient(9deg, rgb(44, 83, 32), rgb(211, 247, 201), rgb(255, 255, 255), rgb(247, 235, 204), rgb(250, 209, 97)) fixed;
 }
 
@@ -104,7 +103,6 @@ body {
     cursor: pointer;
     font-size: 1.1rem;
     color: white;
-    /* font-family: miaowu; */
 }
 
 #live2dcanvas {
