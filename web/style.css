@@ -80,6 +80,11 @@ body {
     font-size: .9rem;
 }
 
+.input input:valid~label {
+    top: -50%;
+    font-size: .9rem;
+}
+
 .form span {
     display: block;
     color: rgb(110, 89, 167);

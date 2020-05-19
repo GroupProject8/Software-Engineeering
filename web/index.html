@@ -22,15 +22,15 @@
                 </div>
                 <div class='form' id="fromLogin">
                     <template v-if='active === "register"'>
-                        <div class="input"><input type="text" name="Email" id='email' /><label for="email">Email</label></div>
-                        <div class="input"><input type="text" name="Username" id="username" /><label for="username">Username</label></div>
-                        <div class="input"><input type="password" name="Password" id="password" /><label for="password">Password</label></div>
-                        <div class="input"><input type="password" name="Repeat" id="repeat" /><label for="repeat">Repeat</label></div>
+                        <div class="input"><input type="text" name="Email" id='email' required/><label for="email">Email</label></div>
+                        <div class="input"><input type="text" name="Username" id="username" required/><label for="username">Username</label></div>
+                        <div class="input"><input type="password" name="Password" id="password" required/><label for="password">Password</label></div>
+                        <div class="input"><input type="password" name="Repeat" id="repeat" required/><label for="repeat">Repeat</label></div>
                     </template>
 
                     <template v-if='active === "login"'>
-                        <div class="input"><input type="text" name="Username" id="username" /><label for="username">Username</label></div>
-                        <div class="input"><input type="password" name="Password" id="password" /><label for="password">Password</label></div>
+                        <div class="input"><input type="text" name="Username" id="username" required/><label for="username">Username</label></div>
+                        <div class="input"><input type="password" name="Password" id="password" required/><label for="password">Password</label></div>
                     </template>
 
                     <a href="#" target="_blank">
