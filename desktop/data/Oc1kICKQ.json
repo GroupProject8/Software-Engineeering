@@ -2,12 +2,12 @@
   "market": [
     {
       "market_id": "1",
-      "market_coordinates": "BS1 5SP",
+      "postcode": "BS1 5SP",
       "market_name": "Tesco"
     },
     {
       "market_id": "2",
-      "market_coordinates": "BS8 1RE",
+      "postcode": "BS8 1RE",
       "market_name": "Sainsbury's"
     }
   ],
