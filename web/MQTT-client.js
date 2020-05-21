@@ -13,27 +13,21 @@ function placeOrder() {
     var x = document.getElementById("frm1");
     var text = "";
 
-    console.log("aaa");
-
     var newOrder = {
 
         order_id: "O" + makeid(7),
         order_status: x.elements[1].value,
-        delivery_id: "D" + makeid(7),
-        delivery: {
-            delivery_name: x.elements[3].value,
-            delivery_address: x.elements[4].value,
-            delivery_coordinates: x.elements[5].value
+        user: {
+            name: x.elements[2].value,
+            telephone: x.elements[3].value,
         },
-        restaurant: {
-            restaurant_id: x.elements[6].value,
-            restaurant_name: x.elements[7].value,
-            restaurant_coordinates: x.elements[8].value
+        market: {
+            market_id: x.elements[4].value,
+            market_name: x.elements[5].value,
+            market_postcode: x.elements[6].value
         },
-        order_items: x.elements[9].value,
-        order_total: x.elements[10].value,
-        order_currency: x.elements[11].value,
-        order_placed: x.elements[12].value
+        order_item: x.elements[7].value,
+        order_quantity: x.elements[8].value
     };
 
     document.getElementById("order").innerHTML = JSON.stringify(newOrder);
@@ -56,7 +50,7 @@ function updateTable(payload) {
     tr = $('<tr/>');
     tr.append("<td>" + json[0].order_id + "</td>");
     tr.append("<td>" + json[1].status + "</td>");
-    tr.append("<td>" + json[4].delivery_address + "</td>");
+    tr.append("<td>" + json[4].market_postcode + "</td>");
     $('table').append(tr);
 }
 
