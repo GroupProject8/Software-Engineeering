@@ -1,13 +1,13 @@
 {
   "market": [
     {
+      "postcode": "BS1 5SP",
       "market_id": "1",
-      "market_coordinates": "BS1 5SP",
       "market_name": "Tesco"
     },
     {
+      "postcode": "BS2 8HW",
       "market_id": "3",
-      "market_coordinates": "BS2 8HW",
       "market_name": "M&S"
     }
   ],
