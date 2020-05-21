@@ -44,7 +44,7 @@ def fun_PokeFood__M5Sub_(topic_data):
   pass
 
 if isProcessed :
-  m5mqtt.subscribe(str('PokeFood/M5Sub'), fun_PokeFood__M5Sub_)
+  m5mqtt.subscribe(str('pokefood/M5Sub'), fun_PokeFood__M5Sub_)
   
 #Accept the order
 def buttonA_wasPressed():
@@ -52,7 +52,7 @@ def buttonA_wasPressed():
   accept.setColor(0x000000)
   wait(1)
   accept.setColor(0xffffff)
-  m5mqtt.publish(str('PokeFood/M5Pub/' + jsonObject['delivery_id']),str('{\"order_status\":\"Order Accepted\"}'))
+  m5mqtt.publish(str('pokefood/M5Pub/' + jsonObject['delivery_id']),str('{\"order_status\":\"Order Accepted\"}'))
   status.setText(str("Status: Order Accepted!"))
   status.setColor(0x000000)
   
@@ -65,7 +65,7 @@ def buttonB_wasPressed():
   cancel.setColor(0x000000)
   wait(1)
   cancel.setColor(0xffffff)
-  m5mqtt.publish(str('PokeFood/M5Pub/' + jsonObject['delivery_id']),str('{\"order_status\":\"Order Canceled\"}'))
+  m5mqtt.publish(str('pokefood/M5Pub/' + jsonObject['delivery_id']),str('{\"order_status\":\"Order Canceled\"}'))
   status.setText(str("Status: Out of stock!"))
   status.setColor(0x000000)
   wait(5)
@@ -85,7 +85,7 @@ def buttonC_wasPressed():
   prepared.setColor(0x000000)
   wait(1)
   prepared.setColor(0xffffff)
-  m5mqtt.publish(str('PokeFood/M5Pub/' + jsonObject['delivery_id']),str('{\"order_status\":\"Order Prepared\"}'))
+  m5mqtt.publish(str('pokefood/M5Pub/' + jsonObject['delivery_id']),str('{\"order_status\":\"Order Prepared\"}'))
   status.setText(str("Status: Order Prepared!"))
   status.setColor(0x000000)
   wait(5)
