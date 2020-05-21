@@ -1,0 +1,58 @@
+.header {
+    background-color: white;
+    padding: 5px;
+    height: 100px;
+    vertical-align: bottom;
+}
+
+.button1 {
+    background: orange;
+    color: white;
+    float: right;
+    font-size: 2rem;
+}
+
+.button2 {
+    background: orange;
+    color: white;
+    float: none;
+    font-size: 2rem;
+}
+
+tr {
+    color: rgb(4, 53, 12);
+    font-size: 2rem;
+}
+
+.btn:hover {
+    color: #8b8b8b;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+
+.btn.btn-link {
+    background: orange;
+    color: white;
+    float: right;
+    vertical-align: bottom;
+    font-size: 1.5rem;
+}
+
+.btn.btn-link:hover {
+    background: orange;
+    color: #deeffd;
+}
+
+.btn-box {
+    margin: 0px 0;
+    text-align: right;
+}
+
+form {
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+.click {
+    color: rgb(116, 116, 116);
+    font-size: 1.4rem;
+}

@@ -16,6 +16,16 @@
     <script>
         //Using the HiveMQ public Broker, with a random client Id
         var client = new Messaging.Client("broker.mqttdashboard.com", 8000, "myclientid_" + parseInt(Math.random() * 100, 10));
+        var client2 = new Messaging.Client("broker.mqttdashboard.com", 8000, "myclientid_" + parseInt(Math.random() * 100, 10));
+        client2.onMessageArrived = function(message) {
+            $('#messages').append(message.payloadString);
+            var data = JSON.parse(message.payloadString);
+            var table = document.getElementById("table");
+            var rows = table.rows;
+            var len = rows.length - 1;
+            var status = (rows[len].cells)[4];
+            status.innerHTML = data.order_status;
+        };
         //Gets  called if the websocket/mqtt connection gets disconnected for any reason
         client.onConnectionLost = function(responseObject) {
             //Depending on your scenario you could implement a reconnect logic here
@@ -33,12 +43,17 @@
             var row = table.insertRow();
             // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
             var orderid = row.insertCell(0);
-            var status = row.insertCell(1);
-            var value = row.insertCell(2);
+            var marketname = row.insertCell(1);
+            var item = row.insertCell(2);
+            var quantity = row.insertCell(3);
+            var status = row.insertCell(4);
+
             // Add some text to the new cells:
             orderid.innerHTML = data.order_id;
+            marketname.innerHTML = data.market.market_name;
+            item.innerHTML = data.order_item;
+            quantity.innerHTML = data.order_quantity;
             status.innerHTML = data.order_status;
-            value.innerHTML = data.order_total;
         };
 
         //Connect Options
@@ -63,16 +78,22 @@
             client.send(message);
         }
     </script>
+    <link rel="stylesheet" type="text/css" href="os_style.css" />
 
 </head>
 
 <body>
-    <button onclick="client.connect(options);">1. Connect</button>
-    <button onclick="client.subscribe('pokefood/#', {qos: 2}); alert('Subscribed');">2. Subscribe</button>
-    <button onclick="publish('Poke Food','put health in your pocket',2);">3. Publish</button>
-    <button onclick="client.disconnect();">(4. Disconnect)</button>
+    <div class="header">
+        <img src="img/pokefood.png" width="360" alt="Poke Food logo">
+        <button onclick="client.disconnect(); client2.disconnect();">(4. Disconnect)</button>
+        <button onclick="publish('Poke Food','put health in your pocket/bar',2);">3. Publish</button>
+        <button onclick="client.subscribe('pokefood', {qos: 2}); client2.subscribe('pokefood/12345', {qos: 2}); alert('Subscribed');">2. Subscribe</button>
+        <button onclick="client.connect(options); client2.connect()">1. Connect</button>
+    </div>
 
-    <h2>Check Order Status</h2>
+    <div>
+        <h1>Order Status</h1>
+    </div>
     <p id="Summary"></p>
 
     <div class="table-responsive">
@@ -91,24 +112,30 @@
             }
             
             tr:nth-child(even) {
-                background-color: #dddddd;
+                background-color: #fff0d9;
             }
         </style>
-        <h2>Order List</h2>
-        <p>Orders currently in the system:</p>
+
+        <h3>Orders currently in the system:</h3>
         <table class="table table-striped table-sm">
             <table id="table">
 
                 <thead>
                     <tr>
                         <th>Order ID</th>
+                        <th>Market Name</th>
+                        <th>Item</th>
+                        <th>Quantity</th>
                         <th>Status</th>
-                        <th>Total</th>
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
+    </div>
+    <div class="footer">
+        </br>
+        <a href="./recipes.html" target="_blank"><input name="Check Order" type="button" class="btn btn-link" value="Back to Recipes" /></a>
     </div>
 </body>
 
