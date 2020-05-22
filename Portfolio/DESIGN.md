@@ -1,3 +1,5 @@
+<p align="right"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png"  /></p>
+
 System Design
 ======
 
@@ -40,9 +42,8 @@ The **company** usually indicates the health recipe development companies. They 
 Our design target is to realize the information interaction among these three. In techniques, we are going to implement a platform **web application** for users; we also design a **desktop application** to achieve the data visualization and control tasks for companies; the **IoT device** will be used by markets to receive information. The **specific process** will be .... **Data communication** ...... **Data repository** ....  <br>
 
 Our system connects them together which will extent effectively address the food waste issue and health issus that we're thinking about. <br>
-Welcome to the **story 1**: John has been running a grocery store. In the last five years, he threw away, on average, a batch of fruit every three days that has rotted because it es not sold in time. One day, he found our smart system and decided to have a try. He paid the promotion fee of 50 pounds per month to the recipe development company - HealthLife. When there is a large stock of a certain food, such as tomatoes, John will informed the HealthLife company and they are expected to publish more recipe about tomatoes to nearby residents. Then, residents who receive this seemingly healthy and delicious recipe for tomatoes will have the idea of shopping tomatoes recently. In this way, John's tomatoes are sold off before they turned bad.  <br>
 
-Here is the **story 2**: Rachel is an office lady and there is a little time for her to pay attention to the healthy diet. One day, an AD from HealthLife company appeared on her phone, which states that "Subscribe today for free". She signs up an account with filling in her information like age, height and weight. And everyday after that, she can receive a push of some health recipes from the company so that she can but something needed in nearby markets, and becomes healthier and healthier. However, the outbreak of COVID-19 limited people's normal life, which means going to the market became a dangerous things in this period. Many people stock up on food which may lead food be un-fresh when they were used. Now, our smart system helped to solve the problem. Rachel found a service in our system - as long as you order food the night before, you can pick it up quickly in the specific market the next day, without meeting crowed of people. She paid 15 pounds per month for this service to the John's grocery, which is the market she loved most, and enjoyed the fresh food while still being safe.  <br>
+[picture--charts/information flow]
 
 <span id="jump1"></span>
 ## b. Object-Oriented design of key sub-systems
