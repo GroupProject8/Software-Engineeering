@@ -276,4 +276,4 @@ When the customer initiates an order request on the web side, the order data wil
 +	**Html**: to develop websites;
 +	**JavaScript**: to control the interactive process of web pages and parse *json* files;
 +	**CSS / VUE framework**: to modify the interface layout of web pages to make it more user-friendly and beautiful;
-+	**Python**: to parse the *json* file delivered by MQTT protocol and design the User Interface.
++	**Python**: to parse the *json* file delivered by MQTT protocol and design the User Interface of Iot device.
