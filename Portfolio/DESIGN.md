@@ -1,4 +1,4 @@
-<p align="right"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png" width=20% /></p>
+<p align="right"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png" width=30% /></p>
 
 System Design
 ======
