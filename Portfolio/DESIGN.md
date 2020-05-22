@@ -75,7 +75,7 @@ IoT application will connect to the Internet through the WIFI module of the m5 s
 
 The IoT application will receive the order information from the MQTT server, and the service provider can feed back the order status (receive / reject) and inventory to the MQTT server. Since there are only three buttons on the input of m5stack, some sending options (such as In stock / Out of stock) will be preset for feedback.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/.png" width=400 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/objectorientM5.png" width=400 /></p>
 
 The IoT device is developed with python and runs on UIflow 1.4.5. Because its main function is to receive and send information, so there is no complicated data processing work, more on the design of UI. The UI is composed of three modules, title, content area and key description. The title part consists of a tag instance. The content area contains 5 label instances (orderId, itemQuantity, itemName, telephone, orderStatus) and a picture instance. The five labels are used to display order data, and the pictures are used to dynamically display the logo according to the logical design. The key description part is composed of three instances of triangle (trangle0, trangle1, trangle2) for key description and key feedback
 
