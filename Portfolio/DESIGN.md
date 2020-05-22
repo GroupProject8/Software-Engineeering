@@ -130,27 +130,27 @@ From market to user, market need to check the stock of required items and then c
 
 The left image is the original prototype of UI, the right one is the look when it is implemented on processing. The overall number of recipes in different status are showed by bar graph list. <br>
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png"  /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png"  />
+<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png" width=20 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png" width=20 />
 
 To show more details of recipe, we expand the length of recipe bar and add more details on ingredients. Logo is also added in final version. We use dropdown list to show details of recipe, so it can be hidden when the users do not need it.  <br>
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI3.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI3.png" width=20 /></p>
 
 <span id="jump32"></span>
 ### M5Stack UI wireframe
 
 Figure 1 shows the prototype of m5stack. The layout of the interface is relatively simple, consisting of a title in PokeFood, a monochrome background, and three key tips.   <br>
 
-![The prototype of m5stack](https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI1.png)
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI1.png" width=10 /></p>
 
 In order to improve the aesthetics of the interface and the friendliness of the operation, the key tips have been improved into blue button-shaped blocks.  <br>
 The interface of the final version of m5stack displays the logo of PokeFood, which makes the product have more distinctive brand characteristics.  <br>
 
-![The final version of m5stack](https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI2.png)
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI2.png" width=10 /></p>
 
 Figure 3 shows the interface of m5stack when receiving an order, where the order status is displayed in red to prompt the user to process the order. When the user clicks to cancel or prepared, m5stack will return to the interface in Figure 2 after five seconds.  <br>
 
-![Interface when order is received](https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI3.png)
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI3.png" width=10 /></p>
 
 <span id="jump33"></span>
 ### Web UI wireframe
