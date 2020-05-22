@@ -4,7 +4,7 @@
 Team Members:  <br>
 Han Wu; Tianbo Wang; Nuo Xu; Lan Zhong; Yijing Zhu
 
-#Introduction
+# Introduction
 - - -
 ## Motivation
 Since pace of people's life is getting faster and faster, health problems are often overlooked. According to the survey on the Internet, there are more than 75% people do not have a health eating habits. Especially people who live in a metropolis, they often eat fast food to save time. When nutrition experts investigated the fact behind it, they found that one of reasons is because learning the nutrition knowledge for most people is impractical. Therefore, designing an application to improve people's quality of life and health will be beneficial for our society. With this in mind, our group planed to design a system relevant to healthy menu, with convenience and scientific. There are two key points to consider in order for this program to really work - one is the convenience and another is the scientific. Currently, most applications in this field is one-way transmission of information, such as advertisement push. However, if information and data transmission can be applied to multi directions, the efficiency will be improved.
