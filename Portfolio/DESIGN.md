@@ -164,7 +164,7 @@ According to this flow chart, the Web Application should contain at least four w
 The first website is a user Login interface. Users who already have accounts can log in with username and password. And for users who use our website for the first time, please feel free to quick register with an email address.  <br>
 
 <p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI1.png"  /></p>
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI2.png" width=300 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI3.png" width=300 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI2.png" width=297 height=450 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI3.png" width=297 height=450 /></p>
 
 After logging in, users can browse various healthy recipes released by the company.  <br>
 At the top right corner of the interface, there are two orange buttons. One is “CHECK ORDER”, once the user clicks on it, he/she will turn to the order status page. The other is “ORDER NOW”. If users find a favorite dish and want to try cooking themselves, they can go to place order of all the ingredients they need with one click.  <br>
