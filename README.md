@@ -1,7 +1,11 @@
 ![Title1](charts/logo1_pokefood.png)
 # PokeFood
 Team Members:  <br>
-Han Wu; Tianbo Wang; Nuo Xu; Lan Zhong; Yijing Zhu
+Han Wu: zr19410@bristol.ac.uk; 
+Tianbo Wang: za19118@bristol.ac.uk; 
+Nuo Xu: uh19168@bristol.ac.uk; 
+Lan Zhong: wv19441@bristol.ac.uk; 
+Yijing Zhu: gh19117@bristol.ac.uk
 
 # Introduction
 ## Motivation
