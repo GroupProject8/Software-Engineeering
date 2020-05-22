@@ -47,7 +47,7 @@ Our design target is to realize the information interaction among these three. I
 
 The **architecture** shows in the following flow chart.
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Information%20Flow.png"  /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Information%20Flow.png" width=80% /></p>
 
 The company aims to develop various delicious and healthy recipes for users who subscribe their service on the desktop application. The the recipes will be published to MQTT topic pokefood. The users can browse recipes on web application and order the raw materials from the market.They need to subscribe the topic pokefood and send their order details to the market. The market then will receive the order and cancel or accept and prepare this order. Whether they accept or cancel the order or the order is prepared, the status will send back to the the users by MQTT and shows in the webpage.
 
@@ -130,27 +130,27 @@ From market to user, market need to check the stock of required items and then c
 
 The left image is the original prototype of UI, the right one is the look when it is implemented on processing. The overall number of recipes in different status are showed by bar graph list. <br>
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png" width=20 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png" width=20 />
+<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png" width=300 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png" width=300 />
 
 To show more details of recipe, we expand the length of recipe bar and add more details on ingredients. Logo is also added in final version. We use dropdown list to show details of recipe, so it can be hidden when the users do not need it.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI3.png" width=20 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI3.png" width=300 /></p>
 
 <span id="jump32"></span>
 ### M5Stack UI wireframe
 
 Figure 1 shows the prototype of m5stack. The layout of the interface is relatively simple, consisting of a title in PokeFood, a monochrome background, and three key tips.   <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI1.png" width=10 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI1.png" width=300 /></p>
 
 In order to improve the aesthetics of the interface and the friendliness of the operation, the key tips have been improved into blue button-shaped blocks.  <br>
 The interface of the final version of m5stack displays the logo of PokeFood, which makes the product have more distinctive brand characteristics.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI2.png" width=10 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI2.png" width=300 /></p>
 
 Figure 3 shows the interface of m5stack when receiving an order, where the order status is displayed in red to prompt the user to process the order. When the user clicks to cancel or prepared, m5stack will return to the interface in Figure 2 after five seconds.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI3.png" width=10 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI3.png" width=300 /></p>
 
 <span id="jump33"></span>
 ### Web UI wireframe
