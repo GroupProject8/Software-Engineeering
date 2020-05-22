@@ -92,7 +92,7 @@ The last sprint is to complete our report by adding some diagrams and pictures. 
 The report was finally completed in mid-May.
 
 <span id="jump1"></span>
-## b. Evaluation of the design in three aspects
+## Evaluation of the design in three aspects
 
 <span id="jump11"></span>
 ### Evaluation of Desktop
@@ -113,7 +113,7 @@ The report was finally completed in mid-May.
 
 
 <span id="jump2"></span>
-## c. Social and Ethical implications of the work
+## Social and Ethical implications of the work
 In building this project, we fully considered in improve the phenomenon of *security problem* and *potential healthy problem*.  <br>
 
 Potentially ethical implication might be privacy and data security. Those who use our application need to provide personal information such as name, phone number in order to inform them of updated information and confirm their identities when collecting order. What is more, the information of searching and browsing the recipes will also be recorded automatically for providing better and targeted service. These information will be sent to both company and market. If they sell information to others or collude with each other to stimulate users’ consumption intention maliciously, it is quite unsafe for the users.  <br>
