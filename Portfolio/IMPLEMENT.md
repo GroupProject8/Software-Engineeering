@@ -39,7 +39,7 @@ This sprint aims to build a prototype of our product. As we confirm our product 
 In this stage, we first think about the key requirements of three sub-systems. The M5 Stack is for the market so it need to receive the customers’ message and reply the order status. The web application need to receive recipes from company and send the orders the market. The desktop application should store the data of recipe and send them to customers. Furthermore, the UI design is very important for the prototype. The UI frameworks are considered in order to show all functions clearly to three kinds of users. Several logos are also designed and finally we choose one main logo and one small logo. <br>
 
 <span id="jump03"></span>
-###Sprint 3: Coding
+### Sprint 3: Coding
 After building a prototype, this sprint aims to code on three sub-systems and complete their key requirements preliminarily. Due to the outbreak of coronavirus, our sprint of coding was delayed and faced with the challenge of remote work but we try our best to implement the basic function fo three sub-systems in this stage. <br>
 
 The performance is discussed as follows.  <br>
