@@ -46,9 +46,11 @@ The **company** usually indicates the health recipe development companies. They 
 
 Our design target is to realize the information interaction among these three. In techniques, we are going to implement a platform **web application** for users; we also design a **desktop application** to achieve the data visualization and control tasks for companies; the **IoT device** will be used by markets to receive information. 
 
-The **specific process** will be .... **Data communication** ...... **Data repository** ....  <br>
+The **architecture** shows in the following flow chart.
 
 <img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Information%20Flow.png"  />
+
+The company aims to develop various delicious and healthy recipes for users who subscribe their service on the desktop application. The the recipes will be published to MQTT topic pokefood. The users can browse recipes on web application and order the raw materials from the market.They need to subscribe the topic pokefood and send their order details to the market. The market then will receive the order and cancel or accept and prepare this order. Whether they accept or cancel the order or the order is prepared, the status will send back to the the users by MQTT and shows in the webpage.
 
 Our system connects them together which will extent effectively address the food waste issue and health issus that we're thinking about. <br>
 
