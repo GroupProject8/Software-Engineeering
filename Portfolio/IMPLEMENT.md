@@ -14,12 +14,12 @@ System Implementation
 &emsp; [Sprint 4](#jump04) <br>
 &emsp; [Sprint 5](#jump05) <br>
 
-**[Evaluation of Design](jump1)**  <br>
+**[Evaluation of Design](#jump1)**  <br>
 &emsp; [Desktop Application](#jump11) <br>
 &emsp; [M5Stack Application](#jump12) <br>
 &emsp; [Web Application](#jump13) <br>
 
-**[Social and Ethical Implications](jump2)**  <br>
+**[Social and Ethical Implications](#jump2)**  <br>
 
 
 
