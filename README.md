@@ -1,4 +1,4 @@
-【图片】
+![Title1](charts/logo1_pokefood.png)
 # PokeFood
 Team Members:  <br>
 Han Wu; Tianbo Wang; Nuo Xu; Lan Zhong; Yijing Zhu
