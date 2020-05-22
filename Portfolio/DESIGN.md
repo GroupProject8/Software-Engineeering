@@ -64,7 +64,7 @@ The desktop system is for the company that provide recipes, it uses two librarie
 MQTTClient, and it contains four files: data.pde, events.pde, management_dashboard.pde and view.pde.
 The ControlP5 helps draw table, and MQTTClient helps to connect with other sub-systems.  <br>
 
-The *management_dashboard.pde* is the main file that specifies the size, background color, font, and title of the interface, and sets the ControlP5 and MQTTClient object. The *data.pde* file reads the data from json files , and writes it back to json files after change of recipe status. The *events.pde* file detects the occurrence of an event (such as a mouse click on a button) and make changes accordingly. The *view.pde* file specifies the layout of the page, with recipe total count on the far left and status updating, published, and canceled for each recipe on the top right. Click on the id of each recipe and specific information about the recipe will appear. If the three buttons below are clicked, the status of the recipe can be changed. It creates new ScrollableList object in build_list(), ListBox object in build_expanded_recipe(), then set attributes oriented these objects. <br>
+The *management_dashboard.pde* is the main file that specifies the size, background color, font, and title of the interface, and sets the ControlP5 and MQTTClient object. The *data.pde* file reads the data from json files , and writes it back to json files after change of recipe status. The *events.pde* file detects the occurrence of an event (such as a mouse click on a button) and make changes accordingly. The *view.pde* file specifies the layout of the page, with recipe total count on the far left and status updating, published, and canceled for each recipe on the top right. Click on the id of each recipe and specific information about the recipe will appear. If the three buttons below are clicked, the status of the recipe can be changed.  <br>
 
 <span id="jump12"></span>
 ### IoT Device
@@ -130,7 +130,7 @@ From market to user, market need to check the stock of required items and then c
 
 The left image is the original prototype of UI, the right one is the look when it is implemented on processing. The overall number of recipes in different status are showed by bar graph list. <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png" width=400 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png" width=400 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png" width=390 height=300 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png" width=390 height=300 /></p>
 
 To show more details of recipe, we expand the length of recipe bar and add more details on ingredients. Logo is also added in final version. We use dropdown list to show details of recipe, so it can be hidden when the users do not need it.  <br>
 
@@ -186,8 +186,7 @@ Furthermore, there is a button to return to the recipe page in the lower right c
 
 It is worth mentioning that the website logos of two versions are completely independently designed according to the theme "Poke Food", which aims to convey healthy eating habits and promote convenient purchasing methods.
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png" weight=510  height=90 /></p>
- <p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png" weight=300 height=300 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png" weight=510  height=90 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png" weight=300 height=300 /></p>
 
 <span id="jump4"></span>
 ## e. Details of the communication protocols in use 
@@ -276,4 +275,4 @@ When the customer initiates an order request on the web side, the order data wil
 +	**Html**: to develop websites;
 +	**JavaScript**: to control the interactive process of web pages and parse *json* files;
 +	**CSS / VUE framework**: to modify the interface layout of web pages to make it more user-friendly and beautiful;
-+	**Python**: to parse the *json* file delivered by MQTT protocol and design the User Interface of Iot device.
++	**Python**: to parse the *json* file delivered by MQTT protocol and design the User Interface.
