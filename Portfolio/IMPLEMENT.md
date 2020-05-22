@@ -106,6 +106,7 @@ The report was finally completed in mid-May.
 ### Evaluation of M5stack
 + M5Stack completes the basic functions required by PokeFood, such as parsing *json* strings, displaying order data, and feeding back order status.
 + M5Stack also has the function of prompting users to process orders, with good interactivity. In terms of logical design, the M5Stack interface will not be refreshed until the user finishes processing the current order. If there are currently unprocessed orders, M5Stack will give customers feedback that the order has not been accepted, thus ensuring that the current order data will not be overwritten. However, this design makes the efficiency of processing orders low, and is not friendly to customers from the web side, because they may need to repeatedly submit orders.
++ Since there is no persistent storage mechanism, the information in M5Stack is temporarily stored. If the user restarts M5Stack by mistake or forgets to charge, the current order information will be lost, causing inconvenience to merchants and customers.
 
 <span id="jump13"></span>
 ### Evaluation of web
