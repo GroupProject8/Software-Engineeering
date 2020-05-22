@@ -1,3 +1,7 @@
+System Implenmentation
+=====
+
+## Table of Contents
 **[Design Process](#jump)** <br>
 &emsp; [Sprint 1](#jump01) <br>
 &emsp; [Sprint 2](#jump02) <br>
@@ -122,3 +126,5 @@ Potentially ethical implication might be privacy and data security. Those who us
 Another implication might be healthy influence for those who have some specific diseases. Most of our healthy recipes are designed for healthy people without chronic diseases. If someone with chronic diseases or specific body corporeity believes these recipes are good to their health and have these diets in their daily life, his condition may be worse. For example, one of our users has diabetes and he should follow recipe with less carbohydrates. However, our recipes for healthy people may contain many carbohydrates such as pasta and potatoes and also use some sugar for flavor. This kind of recipes may do harm to the user when consumed over a long period. Thus it is important for our users to take their physical condition into consideration when choosing these recipes.  <br>
 
 Finally, there is also an implication on the intellectual property. All the recipes will be designed by professional nutritionist and the company will pay for it. However, our service is free for everyone to subscribe. If someone, especially our competitors, copy our recipes and publish them on other platforms, there will be a great loss to the company because they may lose potential customers who are attracted by other similar service.  <br>
+
+In order to reduce these kinds of implications and protect our customers, some effective measures should be taken. Firstly, we should choose the reliable food supplier and market. It is very essential to evaluate the quality of the supply companies. The well-known markets such as Tesco, Sanisbury’s and M&S will be our primary choices. We will also sign a contract with them which includes their duty to keep customers’ information confidential. Next step is that we should inform our customers of the obligation and right of both users and company and sign a contract with them when they sign up on the website. The company have duty to protect the privacy of our customers and the customers should not share our recipe on the other platform without permission. The third measure is for the customers with diseases or in special physical conditions. We are planning to add instruction of allergen and people who are not suitable to every recipe in the future.<br>
