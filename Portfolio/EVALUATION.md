@@ -27,10 +27,10 @@ For the market, the overstocking of food can also be alleviated to a certain ext
 
 <span id="jump01"></span>
 ### Success of M5Stack  
-M5Stack is portable and has a built-in WIFI module, so that users can view and receive orders anywhere through m5stack. The user can hold m5stack to view the required goods while preparing the order, so that the user does not need to remember the complicated order content.  <br>
+M5Stack is portable and has a built-in WIFI module, so that users can view and receive orders anywhere through M5Stack. The user can hold M5Stack to view the required goods while preparing the order, so that the user does not need to remember the complicated order content.  <br>
 + The three buttons of m5stack are preset with corresponding order status feedback functions, and users can send the order status to customers with one click.   <br>
 + In terms of interaction design, M5Stack uses sounds and text to remind users to avoid delays in orders. In addition, M5Stack also has a simple and beautiful operation interface.  <br>
-+ For the customer who initiated the order, because the merchant uses m5stack, the order processing efficiency has been improved, and the order status can be obtained conveniently, which indirectly improves the customer's shopping experience.  <br>
++ For the customer who initiated the order, because the merchant uses M5Stack, the order processing efficiency has been improved, and the order status can be obtained conveniently, which indirectly improves the customer's shopping experience.  <br>
 
 <span id="jump02"></span>
 ### Success of Desktop  
