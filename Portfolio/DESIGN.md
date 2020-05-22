@@ -130,27 +130,27 @@ From market to user, market need to check the stock of required items and then c
 
 The left image is the original prototype of UI, the right one is the look when it is implemented on processing. The overall number of recipes in different status are showed by bar graph list. <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png" width=600 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png" width=600 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png" width=400 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png" width=400 /></p>
 
 To show more details of recipe, we expand the length of recipe bar and add more details on ingredients. Logo is also added in final version. We use dropdown list to show details of recipe, so it can be hidden when the users do not need it.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI3.png" width=600 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI3.png" /></p>
 
 <span id="jump32"></span>
 ### M5Stack UI wireframe
 
 Figure 1 shows the prototype of m5stack. The layout of the interface is relatively simple, consisting of a title in PokeFood, a monochrome background, and three key tips.   <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI1.png" width=600 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI1.png" width=400 /></p>
 
 In order to improve the aesthetics of the interface and the friendliness of the operation, the key tips have been improved into blue button-shaped blocks.  <br>
 The interface of the final version of m5stack displays the logo of PokeFood, which makes the product have more distinctive brand characteristics.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI2.png" width=600 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI2.png" width=400 /></p>
 
 Figure 3 shows the interface of m5stack when receiving an order, where the order status is displayed in red to prompt the user to process the order. When the user clicks to cancel or prepared, m5stack will return to the interface in Figure 2 after five seconds.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI3.png" width=600 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI3.png" width=400 /></p>
 
 <span id="jump33"></span>
 ### Web UI wireframe
@@ -186,7 +186,8 @@ Furthermore, there is a button to return to the recipe page in the lower right c
 
 It is worth mentioning that the website logos of two versions are completely independently designed according to the theme "Poke Food", which aims to convey healthy eating habits and promote convenient purchasing methods.
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png" height=300  /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png" height=300 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png" weight=510  height=90 /></p>
+ <p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png" weight=300 height=300 /></p>
 
 <span id="jump4"></span>
 ## e. Details of the communication protocols in use 
@@ -245,25 +246,25 @@ For future commercial development, we propose the following solutions for perman
 
 The database in web application contains two tables. One is Recipe and another is Market. A market can own zero or many recipes and these recipes can be ordered in the market. To clarify the relationship between markets and recipes, the same recipes with the same recipe name will have different recipe id in different market so one recipe can only be owned by one market at the same time.
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Desktop%20System%20-%20Data%20Structure.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Desktop%20System%20-%20Data%20Structure.png"  /></p>
 
 <span id="jump52"></span>
 ### Web Application
 
 The database in web application contains four tables. The user table is for storing user data. When the users sign in on the website, their information will be stored in this table. When they place an new order, the order information will stored in the order table and a relationship between user and order will be set up by a foreign key username in the order table. Since one order may contains several recipes and a recipe may contain several items, recipe table and item table is essentianl to show this relationship clearly. 
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Web%20System%20-%20Data%20Structure.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Web%20System%20-%20Data%20Structure.png"  /></p>
 
 <span id="jump53"></span>
 ### M5Stack
 
 The database connected to M5Stack contains two tables. The customer will store a customer's information when he first place an order in this market. For old users, their data will not be added to this table repeatedly but the new order information and foreign key customer telephone will be added to order table.
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack_Data%20Structure.jpg"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack_Data%20Structure.jpg"  /></p>
 
 When the customer initiates an order request on the web side, the order data will be uploaded to the database. M5Stack will stay connected to the database and monitor the database for new data inserted every second and add the newly inserted data to the memory of M5Stack. After the user processes the current order, the new order will be displayed. After introducing a database with a permanent storage mechanism, you can also access the historical order data by optimizing the M5Stack UI and operating logic.  <br>
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/The%20work%20flow%20of%20M5Stack.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/The%20work%20flow%20of%20M5Stack.png"  /></p>
 
 
 <span id="jump6"></span>
