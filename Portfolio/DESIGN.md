@@ -184,10 +184,33 @@ All recipe statistic is only stored in desktop side, web side only receive messa
 <span id="jump5"></span>
 ## f. Details of the data persistence mechanisms in use (including a rational for your choice)
 
-Considering the limitations of the equipment and the complexity of the technology, the data transmitted between all the devices of PokeFood is temporarily stored. For future commercial development, we propose the following solutions for permanent storage of data.  <br>
+Considering the limitations of the equipment and the complexity of the technology, the data transmitted between all the devices of PokeFood is temporarily stored. 
 
-We will build a database server based on MySQL. When the customer initiates an order request on the web side, the order data will be uploaded to the database. M5Stack will stay connected to the database and monitor the database for new data inserted every second and add the newly inserted data to the memory of M5Stack. After the user processes the current order, the new order will be displayed. After introducing a database with a permanent storage mechanism, you can also access the historical order data by optimizing the M5Stack UI and operating logic.  <br>
-【图片】
+All the data in sub-systems are stored in json file. Recipe data stored in json file helps the stability of data as it is not easy to be lost when a system crash or sudden interruption happens. Each recipe stored as a separate json object, thus even a damage destroys the data of one recipe does not affect the others.
+
+For future commercial development, we propose the following solutions for permanent storage of data. We will build a database server based on MySQL. The data structure of three sub-system shows as follows. <br>
+
+### Desktop Application
+
+The database in web application contains two tables. One is Recipe and another is Market. A market can own zero or many recipes and these recipes can be ordered in the market. To clarify the relationship between markets and recipes, the same recipes with the same recipe name will have different recipe id in different market so one recipe can only be owned by one market at the same time.
+
+[picture--chart/Desktop System-data structure]
+
+### Web Application
+
+The database in web application contains four tables. The user table is for storing user data. When the users sign in on the website, their information will be stored in this table. When they place an new order, the order information will stored in the order table and a relationship between user and order will be set up by a foreign key username in the order table. Since one order may contains several recipes and a recipe may contain several items, recipe table and item table is essentianl to show this relationship clearly. 
+
+[picture--chart/Web System-data structure]
+
+### M5Stack
+
+The database connected to M5Stack contains two tables. The customer will store a customer's information when he first place an order in this market. For old users, their data will not be added to this table repeatedly but the new order information and foreign key customer telephone will be added to order table.
+
+[picture--chart/M5Stack-data structure]
+
+When the customer initiates an order request on the web side, the order data will be uploaded to the database. M5Stack will stay connected to the database and monitor the database for new data inserted every second and add the newly inserted data to the memory of M5Stack. After the user processes the current order, the new order will be displayed. After introducing a database with a permanent storage mechanism, you can also access the historical order data by optimizing the M5Stack UI and operating logic.  <br>
+
+[picture--chart/the work flow of M5Stack]
 
 <span id="jump6"></span>
 ## g. Details of web technologies in use (including a rational for your choice)
