@@ -186,7 +186,8 @@ Furthermore, there is a button to return to the recipe page in the lower right c
 
 It is worth mentioning that the website logos of two versions are completely independently designed according to the theme "Poke Food", which aims to convey healthy eating habits and promote convenient purchasing methods.
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png" weight=510  height=90 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png" weight=100 height=100 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png" weight=510  height=90 /></p>
+<p align="center"> <img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png" weight=300 height=300 /></p>
 
 <span id="jump4"></span>
 ## e. Details of the communication protocols in use 
