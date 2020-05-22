@@ -48,7 +48,7 @@ Our design target is to realize the information interaction among these three. I
 
 The **architecture** shows in the following flow chart.
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Information%20Flow.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Information%20Flow.png"  /></p>
 
 The company aims to develop various delicious and healthy recipes for users who subscribe their service on the desktop application. The the recipes will be published to MQTT topic pokefood. The users can browse recipes on web application and order the raw materials from the market.They need to subscribe the topic pokefood and send their order details to the market. The market then will receive the order and cancel or accept and prepare this order. Whether they accept or cancel the order or the order is prepared, the status will send back to the the users by MQTT and shows in the webpage.
 
