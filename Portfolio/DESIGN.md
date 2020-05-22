@@ -130,27 +130,27 @@ From market to user, market need to check the stock of required items and then c
 
 The left image is the original prototype of UI, the right one is the look when it is implemented on processing. The overall number of recipes in different status are showed by bar graph list. <br>
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png" width=300 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png" width=300 />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI1.png" width=600 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI2.png" width=600 /></p>
 
 To show more details of recipe, we expand the length of recipe bar and add more details on ingredients. Logo is also added in final version. We use dropdown list to show details of recipe, so it can be hidden when the users do not need it.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI3.png" width=300 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/desktop--UI3.png" width=600 /></p>
 
 <span id="jump32"></span>
 ### M5Stack UI wireframe
 
 Figure 1 shows the prototype of m5stack. The layout of the interface is relatively simple, consisting of a title in PokeFood, a monochrome background, and three key tips.   <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI1.png" width=300 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI1.png" width=600 /></p>
 
 In order to improve the aesthetics of the interface and the friendliness of the operation, the key tips have been improved into blue button-shaped blocks.  <br>
 The interface of the final version of m5stack displays the logo of PokeFood, which makes the product have more distinctive brand characteristics.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI2.png" width=300 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI2.png" width=600 /></p>
 
 Figure 3 shows the interface of m5stack when receiving an order, where the order status is displayed in red to prompt the user to process the order. When the user clicks to cancel or prepared, m5stack will return to the interface in Figure 2 after five seconds.  <br>
 
-<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI3.png" width=300 /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/M5Stack-UI3.png" width=600 /></p>
 
 <span id="jump33"></span>
 ### Web UI wireframe
@@ -158,35 +158,35 @@ Figure 3 shows the interface of m5stack when receiving an order, where the order
 The Web Application is definitely a user-oriented system, so it should be designed from the user's point of view.  <br>
 The following is a general flow chart when a user starts to use the web application:
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Step%20Flow%20for%20users.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/Step%20Flow%20for%20users.png" /></p>
 
 According to this flow chart, the Web Application should contain at least four websites: Login - Recipes - Place Order - Order Status.  <br>
 The first website is a user Login interface. Users who already have accounts can log in with username and password. And for users who use our website for the first time, please feel free to quick register with an email address.  <br>
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI1.png"  />
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI2.png"  /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI3.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI1.png"  /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI2.png" width=300 /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI3.png" width=300 /></p>
 
 After logging in, users can browse various healthy recipes released by the company.  <br>
 At the top right corner of the interface, there are two orange buttons. One is “CHECK ORDER”, once the user clicks on it, he/she will turn to the order status page. The other is “ORDER NOW”. If users find a favorite dish and want to try cooking themselves, they can go to place order of all the ingredients they need with one click.  <br>
 There is a hyperlink at the bottom of the page to go to the BBC recipe website "BBC Good Food".
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI4.png"  />
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI5.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI4.png"  /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI5.png"  /></p>
 
 Below is the web page for users to place order. Users need to click the button, “Open MQTT websocket client” in the upper right corner to subscribe “pokefood” channel. After filling all the order details, user can click “Place Order”, and the order information will be sent to the market's M5Stack through the MQTT protocol. <br>
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI6.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI6.png"  /></p>
 
 Below is the web page for users to query order status. After clicking “Connect” and “Subscribe”, users can check the real-time status of orders. For example, after the market confirmed that items are in stock, the corresponding order status will turn to “Accepted”. <br>
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI7.png"  />
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI8.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI7.png"  /></p>
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/web--UI8.png"  /></p>
 
 Furthermore, there is a button to return to the recipe page in the lower right corner of these two pages. Users are able to continue browsing recipes by clicking this button.  <br>
 
 It is worth mentioning that the website logos of two versions are completely independently designed according to the theme "Poke Food", which aims to convey healthy eating habits and promote convenient purchasing methods.
 
-<img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png"  /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png"  />
+<p align="center"><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png" height=300  /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png" height=300 /></p>
 
 <span id="jump4"></span>
 ## e. Details of the communication protocols in use 
