@@ -35,7 +35,6 @@ System Design
 
 
 
-# System Design
 
 <span id="jump"></span>
 ## a. Architecture of the entire system
