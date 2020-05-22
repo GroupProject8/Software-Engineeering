@@ -190,7 +190,7 @@ It is worth mentioning that the website logos of two versions are completely ind
 <img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo1_pokefood.png"  /><img src="https://github.com/GroupProject8/Software-Engineering/blob/master/charts/logo2_food.png"  />
 
 <span id="jump4"></span>
-## e. Details of the communication protocols in use (including a rational for your choice)
+## e. Details of the communication protocols in use 
 
 <span id="jump41"></span>
 ### Web and M5Stack
@@ -233,7 +233,7 @@ All recipe statistic is only stored in desktop side, web side only receive messa
 
 
 <span id="jump5"></span>
-## f. Details of the data persistence mechanisms in use (including a rational for your choice)
+## f. Details of the data persistence mechanisms in use 
 
 Considering the limitations of the equipment and the complexity of the technology, the data transmitted between all the devices of PokeFood is temporarily stored. 
 
@@ -268,7 +268,7 @@ When the customer initiates an order request on the web side, the order data wil
 
 
 <span id="jump6"></span>
-## g. Details of web technologies in use (including a rational for your choice)
+## g. Details of web technologies in use 
 
 +    **Processing**: to convert the input text into a json file and send it to website;
 +	**Json**: to ensure that messages are transmitted more stably through the MQTT protocol, even a damage destroys the data of one message does not affect the others;
