@@ -18,7 +18,6 @@ Project Evaluation
 
 <span id="jump"></span>
 ## Reflection of Success
-Overall, the principle of this project is splendid.  
 For the company, this is a good way to promote healthy diet for all and it can also attract a large number of users with high-quality content. As a result, fees through advertising and subscription benefits it most. Meanwhile, the company can seek for sponsorship in the market, because this can help the market to sell excess items to a certain extent.  <br>
 
 For the user, the software engineering system we developed can improve user’s procurement efficiency and balance nutrition intake scientifically. Especially during the special period of COVID-19, in order to slow down the spread of the virus and prevent infection of themselves and their families, people have actively responded to the government's call to reduce the number of going out in public. As a result, the inability to supplement fresh ingredients frequently and eating relatively simple for a long time will harm to people's health. Therefore, this system can help users reduce the impact.  <br>
