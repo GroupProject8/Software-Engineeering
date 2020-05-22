@@ -22,7 +22,8 @@
 ## a. Breakdown of project into sprints (showing the users stories implemented in each).
 
 <span id="jump01"></span>
-###Sprint 1: Ideation
+
+### Sprint 1: Ideation
 This sprint aims to determine the idea of our product and architecture of our system. We have various ideas about what we can do in this project at first but soon we all agree with the idea of a service related to food. This is because it is a real problem that there are a lot of waste of food in the world.   <br>
 
 Considering this situation, our initial idea of this food service is a food reminder which enables our users to upload the food information, such as name, quantity and best before date to the application. Then the application can sort the food with the date and show users which one they should consume as soon as possible. They can also use it when they are in market to see which food they have already had. Therefore, they can manage their food and reduce the waste better.   <br>
@@ -32,7 +33,7 @@ However, one key point about this project is that we need three kinds of stakeho
 Then we think about the whole architecture of this system. We choose web application, desktop application and M5 Stack as three components. We choose to provide web application to users , desktop application to company and M5 Stack to markets. Through web application, the users can easily get access to the service by any devices network.  <br>
 
 <span id="jump02"></span>
-###Sprint 2: Prototype
+### Sprint 2: Prototype
 This sprint aims to build a prototype of our product. As we confirm our product idea and system architecture, we decided to build a prototype. We try to draw some pictures and take a video to build our prototype. <br>
 
 In this stage, we first think about the key requirements of three sub-systems. The M5 Stack is for the market so it need to receive the customers’ message and reply the order status. The web application need to receive recipes from company and send the orders the market. The desktop application should store the data of recipe and send them to customers. Furthermore, the UI design is very important for the prototype. The UI frameworks are considered in order to show all functions clearly to three kinds of users. Several logos are also designed and finally we choose one main logo and one small logo. <br>
@@ -44,7 +45,7 @@ After building a prototype, this sprint aims to code on three sub-systems and co
 The performance is discussed as follows.  <br>
 
 <span id="jump031"></span>
-####Web application
+#### Web application
 Web application can receive the recipes from desktop application and send order information to the market the users selected.  <br>
 
 Here is the user’s story:
@@ -54,7 +55,7 @@ Rachel is an office lady and she is busy with her work. One day she see an adver
 3.	She wants to confirm the order status so she opens the webpage of ‘check order’. She can see all her orders and order status in the webpage.
 
 <span id="jump032"></span>
-####Desktop application
+#### Desktop application
 Desktop application have completed the basic function of storing recipes and send recipes to MQTT topic Pokefood. The recipes in the desktop can be in three status and the company can change their status. <br>
 
 Here is the user’s story:
@@ -64,7 +65,7 @@ Peter is a staff of Pokefood company.
 3.	The expert also tell him the food in another recipe is not in season and cannot find in market so he presses ‘Cancel’ button and the recipe is shown in the cancelled column.
 
 <span id="jump033"></span>
-####M5Stack
+#### M5Stack
 M5Stack implemented the function of receiving orders and replying order status. The order has three status: accept, cancel and prepared. The user’s story is showing as follows:  <br>
 
 John is an owner of grocery store and one day he has received an order from a customer.   <br>
@@ -72,7 +73,7 @@ John is an owner of grocery store and one day he has received an order from a cu
 2.	The food is in stock so he presses the ‘Accept’ button to tell customer the order has been accepted. After he has prepared all things well, he presses the ‘Prepared’ button. Soon the customer comes and collects his order.
 
 <span id="jump04"></span>
-###Sprint 4: Integration
+### Sprint 4: Integration
 After coding on web application, desktop application and M5 Stack, it is essential for us to integrate them and make some modifications in this sprint. Since there are two data transmission paths in our system, our work of integration can be divided into two parts. One is transmission of recipes from desktop  application to web application. Another is transmission of order and order status between web application and M5 Stack. The transmission from desktop to web allows company to send their recipes and the information of cooperative market to the users by MQTT. The two-way trans-mission between web and M5Stack also uses MQTT. The customers can send order information to market and market give current status to customers.   <br>
 
 We also made some modifications in this stage. The evolution of UI framework has been considered and the logos were added to each sub-system to show their relationship with our project. Furthermore, the interfaces of three sub-systems are also beautified. The web application was added a login webpage which allows customers to sign up their accounts.  <br>
@@ -82,7 +83,7 @@ Overall, the three sub-systems are integrated to whole system through methods as
 Considering the situation of coronavirus, we think the system can really help a lot in this difficult time. Here is another user's story: Mary is a housewife and she usually prepare the meals for her family. However, her city lockdown and citizens are told that they should stay at home unless they go to the market to buy necessities. Mary is nervous and she wants to avoid staying in the super-market for a long time. The online supermarket need to wait a long queue for delivery service. One day Mary find Pokefood and she sign up on the website. She find there are many recipes can be selected and ordered online. She try to order “Chicken & avocado sandwich topper” in Tesco. Soon the supermarket send ‘accept’ message to her. About one hour after, supermarket send ‘prepared’ message to her and she go to collect her order.
 
 <span id="jump05"></span>
-###Sprint 5: Report
+### Sprint 5: Report
 
 The last sprint aims to complete our report and add some diagrams and pictures to help illustrate different parts. In this sprint, our group held a meeting for report to clarify every part in the report and rearrange our thoughts. We divided our report to four Markdown files. The first one is an over-all of whole report and the remains will be design, implement and evaluation part. Markdown editor will be used to write these files. After the draft has been finished, we upload to the Github and modify directly on the Github so that we can see previews changes and layout clearly.
 
